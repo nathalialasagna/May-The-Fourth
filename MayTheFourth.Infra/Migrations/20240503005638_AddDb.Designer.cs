@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MayTheFourth.Infra.Migrations
 {
     [DbContext(typeof(MayTheFourthDataContext))]
-    [Migration("20240501175006_AdicionaDb")]
-    partial class AdicionaDb
+    [Migration("20240503005638_AddDb")]
+    partial class AddDb
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace MayTheFourth.Infra.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.4");
 
-            modelBuilder.Entity("FilmeNavesEstelares", b =>
+            modelBuilder.Entity("FilmeNaveEstelar", b =>
                 {
                     b.Property<int>("FilmesId")
                         .HasColumnType("INTEGER");
@@ -32,7 +32,7 @@ namespace MayTheFourth.Infra.Migrations
 
                     b.HasIndex("NavesId");
 
-                    b.ToTable("FilmeNavesEstelares");
+                    b.ToTable("FilmeNaveEstelar");
                 });
 
             modelBuilder.Entity("FilmePersonagem", b =>
@@ -113,7 +113,7 @@ namespace MayTheFourth.Infra.Migrations
                     b.ToTable("Filmes");
                 });
 
-            modelBuilder.Entity("MayTheFourth.Domain.Entities.NavesEstelares", b =>
+            modelBuilder.Entity("MayTheFourth.Domain.Entities.NaveEstelar", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -326,7 +326,7 @@ namespace MayTheFourth.Infra.Migrations
                     b.ToTable("Veiculos");
                 });
 
-            modelBuilder.Entity("FilmeNavesEstelares", b =>
+            modelBuilder.Entity("FilmeNaveEstelar", b =>
                 {
                     b.HasOne("MayTheFourth.Domain.Entities.Filme", null)
                         .WithMany()
@@ -334,7 +334,7 @@ namespace MayTheFourth.Infra.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MayTheFourth.Domain.Entities.NavesEstelares", null)
+                    b.HasOne("MayTheFourth.Domain.Entities.NaveEstelar", null)
                         .WithMany()
                         .HasForeignKey("NavesId")
                         .OnDelete(DeleteBehavior.Cascade)

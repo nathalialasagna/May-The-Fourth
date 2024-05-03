@@ -3,22 +3,22 @@ using MayTheFourth.Domain.Interfaces.Repositories;
 
 namespace MayTheFourth.API.Endpoints;
 
-public class NavesEstelaresEndpoints : CarterModule
+public class NaveEstelareEndpoints : CarterModule
 {
-    public NavesEstelaresEndpoints() : base("/navesEstelares")
+    public NaveEstelareEndpoints() : base("/navesEstelares")
     {
         WithTags("navesEstelares");
     }
 
     public override void AddRoutes(IEndpointRouteBuilder app)
     {
-        app.MapGet("/", async (INavesEstelaresRepository navesEstelaresRepository) =>
+        app.MapGet("/", async (INaveEstelarRepository navesEstelaresRepository) =>
         {
             var naves = await navesEstelaresRepository.ListAsync();
             return Results.Ok(naves);
         });
 
-        app.MapGet("/{idNave:int}", async (int idNave, INavesEstelaresRepository navesEstelaresRepository) =>
+        app.MapGet("/{idNave:int}", async (int idNave, INaveEstelarRepository navesEstelaresRepository) =>
         {
             var nave = await navesEstelaresRepository.GetAsync(n => n.Id == idNave);
 

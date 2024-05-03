@@ -29,12 +29,11 @@ app.Run();
 void ConfigureServices(WebApplicationBuilder builder)
 {
 
-    builder.Services.AddDbContext<MayTheFourthDataContext>(options => options.UseLazyLoadingProxies()
-                                                                             .UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    builder.Services.AddDbContext<MayTheFourthDataContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
     // Repositories services
     builder.Services.AddScoped<IFilmeRepository, FilmeRepository>();
-    builder.Services.AddScoped<INavesEstelaresRepository, NavesEstelaresRepository>();
+    builder.Services.AddScoped<INaveEstelarRepository, NaveEstelarRepository>();
     builder.Services.AddScoped<IPersonagemRepository, PersonagemRepository>();
     builder.Services.AddScoped<IPlanetaRepository, PlanetaRepository>();
     builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();

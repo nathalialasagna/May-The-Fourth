@@ -39,5 +39,5 @@ public class Veiculo
     [Required]
     public string Classe { get; set; }
 
-    public virtual IList<Filme> Filmes { get; set; }
+    public IList<Filme> Filmes { get; set; }
 }

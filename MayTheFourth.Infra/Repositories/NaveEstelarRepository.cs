@@ -4,9 +4,9 @@ using MayTheFourth.Infra.Context;
 
 namespace MayTheFourth.Infra.Repositories;
 
-public class NavesEstelaresRepository : Repository<NavesEstelares>, INavesEstelaresRepository
+public class NaveEstelarRepository : Repository<NaveEstelar>, INaveEstelarRepository
 {
-    public NavesEstelaresRepository(MayTheFourthDataContext context) : base(context)
+    public NaveEstelarRepository(MayTheFourthDataContext context) : base(context)
     {
     }
 }

@@ -33,5 +33,5 @@ public class Personagem
     [Required]
     public virtual Planeta Planeta { get; set; }
 
-    public virtual IList<Filme> Filmes { get; set; }
+    public IList<Filme> Filmes { get; set; }
 }

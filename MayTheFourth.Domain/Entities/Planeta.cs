@@ -33,7 +33,7 @@ public class Planeta
     [Required]
     public string Populacao { get; set; }
 
-    public virtual IList<Personagem> Personagens { get; set; }
+    public IList<Personagem> Personagens { get; set; }
 
-    public virtual IList<Filme> Filmes { get; set; }
+    public IList<Filme> Filmes { get; set; }
 }

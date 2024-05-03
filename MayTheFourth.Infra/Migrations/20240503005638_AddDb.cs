@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MayTheFourth.Infra.Migrations
 {
     /// <inheritdoc />
-    public partial class AdicionaDb : Migration
+    public partial class AddDb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -99,7 +99,7 @@ namespace MayTheFourth.Infra.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "FilmeNavesEstelares",
+                name: "FilmeNaveEstelar",
                 columns: table => new
                 {
                     FilmesId = table.Column<int>(type: "INTEGER", nullable: false),
@@ -107,15 +107,15 @@ namespace MayTheFourth.Infra.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FilmeNavesEstelares", x => new { x.FilmesId, x.NavesId });
+                    table.PrimaryKey("PK_FilmeNaveEstelar", x => new { x.FilmesId, x.NavesId });
                     table.ForeignKey(
-                        name: "FK_FilmeNavesEstelares_Filmes_FilmesId",
+                        name: "FK_FilmeNaveEstelar_Filmes_FilmesId",
                         column: x => x.FilmesId,
                         principalTable: "Filmes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_FilmeNavesEstelares_NavesEstelares_NavesId",
+                        name: "FK_FilmeNaveEstelar_NavesEstelares_NavesId",
                         column: x => x.NavesId,
                         principalTable: "NavesEstelares",
                         principalColumn: "Id",
@@ -222,8 +222,8 @@ namespace MayTheFourth.Infra.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_FilmeNavesEstelares_NavesId",
-                table: "FilmeNavesEstelares",
+                name: "IX_FilmeNaveEstelar_NavesId",
+                table: "FilmeNaveEstelar",
                 column: "NavesId");
 
             migrationBuilder.CreateIndex(
@@ -251,7 +251,7 @@ namespace MayTheFourth.Infra.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "FilmeNavesEstelares");
+                name: "FilmeNaveEstelar");
 
             migrationBuilder.DropTable(
                 name: "FilmePersonagem");

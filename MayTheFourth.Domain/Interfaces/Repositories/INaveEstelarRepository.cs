@@ -2,7 +2,7 @@
 
 namespace MayTheFourth.Domain.Interfaces.Repositories
 {
-    public interface INavesEstelaresRepository : IRepositoryBase<NavesEstelares>
+    public interface INaveEstelarRepository : IRepositoryBase<NaveEstelar>
     {
     }
 }

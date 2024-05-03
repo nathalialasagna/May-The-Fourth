@@ -28,8 +28,4 @@
     <ProjectReference Include="..\MayTheFourth.Infra\MayTheFourth.Infra.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\Services\" />
-  </ItemGroup>
-
 </Project>

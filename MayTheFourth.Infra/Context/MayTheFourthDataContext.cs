@@ -1,55 +1,15 @@
 ﻿using MayTheFourth.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure.Internal;
 
 namespace MayTheFourth.Infra.Context;
 
-/// <summary>
-/// Contexto do Entity Framework representando a conexão com o banco de dados e o modelo para o sistema MayTheFourth.
-/// Este contexto inclui conjuntos de dados para Filmes, Naves Estelares, Personagens, Planetas e Veículos.
-/// </summary>
 public class MayTheFourthDataContext : DbContext
 {
-    /// <summary>
-    /// Inicializa uma nova instância da classe MayTheFourthDataContext com as opções configuradas.
-    /// </summary>
-    /// <param name="options">As opções de configuração para o contexto do DbContext.</param>
-    public MayTheFourthDataContext(DbContextOptions<MayTheFourthDataContext> options) : base(options)
-    {
+    public MayTheFourthDataContext(DbContextOptions<MayTheFourthDataContext> options) : base(options) { }
 
-    }
-
-    /// <summary>
-    /// Representa uma coleção de filmes no banco de dados.
-    /// </summary>
     public DbSet<Filme> Filmes { get; set; }
-
-    /// <summary>
-    /// Representa uma coleção de naves estelares no banco de dados.
-    /// </summary>
-    public DbSet<NavesEstelares> NavesEstelares { get; set; }
-
-    /// <summary>
-    /// Representa uma coleção de personagens no banco de dados.
-    /// </summary>
+    public DbSet<NaveEstelar> NavesEstelares { get; set; }
     public DbSet<Personagem> Personagens { get; set; }
-
-    /// <summary>
-    /// Representa uma coleção de planetas no banco de dados.
-    /// </summary>
     public DbSet<Planeta> Planetas { get; set; }
-
-    /// <summary>
-    /// Representa uma coleção de veiculos no banco de dados.
-    /// </summary>
     public DbSet<Veiculo> Veiculos { get; set; }
-
-    /// <summary>
-    /// Aplica configurações de mapeamento para cada entidade ao criar o modelo de banco de dados.
-    /// </summary>
-    /// <param name="modelBuilder">O construtor de modelos para configurar as entidades mapeadas.</param>
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-
-    }
 }

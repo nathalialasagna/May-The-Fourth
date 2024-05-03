@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 
 namespace MayTheFourth.Domain.Entities;
 public class Filme
@@ -23,8 +22,8 @@ public class Filme
     [Required]
     public DateTime DataLancamento { get; set; }
 
-    public virtual IList<Personagem> Personagens { get; set; }
-    public virtual IList<Planeta> Planetas { get; set; }
-    public virtual IList<Veiculo> Veiculos { get; set; }
-    public virtual IList<NavesEstelares> Naves { get; set; }
+    public IList<Personagem> Personagens { get; set; }
+    public IList<Planeta> Planetas { get; set; }
+    public IList<Veiculo> Veiculos { get; set; }
+    public IList<NaveEstelar> Naves { get; set; }
 }

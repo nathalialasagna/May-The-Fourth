@@ -2,7 +2,7 @@
 
 namespace MayTheFourth.Domain.Entities;
 
-public class NavesEstelares
+public class NaveEstelar
 {
     public int Id { get; set; }
     [Required]
@@ -44,5 +44,5 @@ public class NavesEstelares
     [Required]
     public string Classe { get; set; }
 
-    public virtual IList<Filme> Filmes { get; set; }
+    public IList<Filme> Filmes { get; set; }
 }

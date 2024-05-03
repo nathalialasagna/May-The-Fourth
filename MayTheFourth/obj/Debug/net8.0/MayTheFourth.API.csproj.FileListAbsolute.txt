@@ -171,5 +171,3 @@ C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-bac
 C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth\obj\Debug\net8.0\MayTheFourth.API.pdb
 C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth\obj\Debug\net8.0\MayTheFourth.API.genruntimeconfig.cache
 C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth\obj\Debug\net8.0\ref\MayTheFourth.API.dll
-C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth\bin\Debug\net8.0\Castle.Core.dll
-C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

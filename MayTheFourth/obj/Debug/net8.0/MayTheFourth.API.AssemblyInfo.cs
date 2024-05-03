@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MayTheFourth.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+126902359896e74cb24764c27d68444a8dcb8f2d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8809753644336e9ce219b4117fa63d771584ec6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MayTheFourth.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MayTheFourth.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
