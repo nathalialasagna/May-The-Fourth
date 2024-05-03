@@ -1,0 +1,12 @@
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\bin\Debug\net8.0\MayTheFourth.Domain.deps.json
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\bin\Debug\net8.0\MayTheFourth.Domain.dll
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\bin\Debug\net8.0\MayTheFourth.Domain.pdb
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\MayTheFourth.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\MayTheFourth.Domain.AssemblyInfoInputs.cache
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\MayTheFourth.Domain.AssemblyInfo.cs
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\MayTheFourth.Domain.csproj.CoreCompileInputs.cache
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\MayTheFourth.Domain.sourcelink.json
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\MayTheFourth.Domain.dll
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\refint\MayTheFourth.Domain.dll
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\MayTheFourth.Domain.pdb
+C:\Users\natha\OneDrive\Documentos\BaltaDesafio\desafio-balta-may-the-fourth-backend\MayTheFourth\MayTheFourth.Domain\obj\Debug\net8.0\ref\MayTheFourth.Domain.dll
