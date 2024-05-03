@@ -14,13 +14,13 @@ public class FilmeEndpoints : CarterModule
     {
         app.MapGet("/", async (IFilmeRepository filmeRepository) =>
         {
-            var filmes = await filmeRepository.ListAsync();
+            var filmes = await filmeRepository.GetAllWithData();
             return Results.Ok(filmes);
         });
 
         app.MapGet("/{idFilme:int}", async (int idFilme, IFilmeRepository filmeRepository) =>
         {
-            var filme = await filmeRepository.GetAsync(f => f.Id == idFilme);
+            var filme = await filmeRepository.GetByIdWithData(idFilme);
 
             if (filme == null) return Results.NotFound();
 

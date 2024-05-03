@@ -8,12 +8,21 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 builder.Services.AddSwaggerGen();
 builder.Services.AddCarter();
 
-ConfigureServices(builder);
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddDbContext<MayTheFourthDataContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Repositories services
+builder.Services.AddScoped<IFilmeRepository, FilmeRepository>();
+builder.Services.AddScoped<INaveEstelarRepository, NaveEstelarRepository>();
+builder.Services.AddScoped<IPersonagemRepository, PersonagemRepository>();
+builder.Services.AddScoped<IPlanetaRepository, PlanetaRepository>();
+builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
+
 
 var app = builder.Build();
 ConfigureApiServices(app);
@@ -26,19 +35,9 @@ app.MapCarter();
 
 app.Run();
 
-void ConfigureServices(WebApplicationBuilder builder)
-{
 
-    builder.Services.AddDbContext<MayTheFourthDataContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-    // Repositories services
-    builder.Services.AddScoped<IFilmeRepository, FilmeRepository>();
-    builder.Services.AddScoped<INaveEstelarRepository, NaveEstelarRepository>();
-    builder.Services.AddScoped<IPersonagemRepository, PersonagemRepository>();
-    builder.Services.AddScoped<IPlanetaRepository, PlanetaRepository>();
-    builder.Services.AddScoped<IVeiculoRepository, VeiculoRepository>();
 
-}
 
 void ConfigureApiServices(WebApplication webApplication)
 {

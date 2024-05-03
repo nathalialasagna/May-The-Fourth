@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MayTheFourth.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8809753644336e9ce219b4117fa63d771584ec6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+185db1a95ec74e7ddb5d7f2d58eb2e797e753c89")]
 [assembly: System.Reflection.AssemblyProductAttribute("MayTheFourth.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MayTheFourth.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

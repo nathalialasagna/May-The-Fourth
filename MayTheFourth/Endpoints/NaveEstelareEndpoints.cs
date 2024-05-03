@@ -14,13 +14,13 @@ public class NaveEstelareEndpoints : CarterModule
     {
         app.MapGet("/", async (INaveEstelarRepository navesEstelaresRepository) =>
         {
-            var naves = await navesEstelaresRepository.ListAsync();
+            var naves = await navesEstelaresRepository.GetAllWithData();
             return Results.Ok(naves);
         });
 
         app.MapGet("/{idNave:int}", async (int idNave, INaveEstelarRepository navesEstelaresRepository) =>
         {
-            var nave = await navesEstelaresRepository.GetAsync(n => n.Id == idNave);
+            var nave = await navesEstelaresRepository.GetByIdWithData(idNave);
 
             if(nave == null) return Results.NotFound();
 
